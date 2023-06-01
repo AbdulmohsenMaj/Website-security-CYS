@@ -2,7 +2,7 @@
 include 'session.php';
 include 'connection.php';
 
-// Delete car logic
+// Delete car logics
 // Check if deleteCar is set
 if (isset($_POST['deleteCar'])) {
     $carIdToDelete = $_POST['carIdToDelete']; // Get the id of the car to delete
