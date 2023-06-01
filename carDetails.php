@@ -1,4 +1,5 @@
 <?php
+//including the database connection file and session file
 include 'session.php';
 include 'connection.php';
 
