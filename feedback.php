@@ -54,6 +54,9 @@ $conn->close();
             if (count($feedbacks) > 0) {
                 foreach ($feedbacks as $feedback) {
                     echo '<div class="feedback">';
+
+                    // The htmlspecialchars() function is used to convert special characters to their HTML entities, 
+                    // which prevents them from being interpreted as code (preventing XSS attacks).
                     echo "<p><strong>Name:</strong> " . htmlspecialchars($feedback["name"]) . "</p>";
                     echo "<p><strong>Message:</strong> " . htmlspecialchars($feedback["message"]) . "</p>";
                     echo "<p><strong>Created At:</strong> " . htmlspecialchars($feedback["created_at"]) . "</p>";
